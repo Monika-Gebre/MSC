@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Allura&family=Bentham&family=Poiret+One&display=swap');
+
+
+:root {
+  --primary-color: #fcecec;
+  --secondary-color: #ECB8A5;
+  --tertiary-color : #4d4d4d;
+
+  --primary-font: Bentham;
+  --secondary-font: Allura;
+  --tertiary-font: 'Poiret One';
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--primary-color);
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style-type: none;
+}
+
+
+.header {
+  width: 100%;
+  padding: 1rem;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav__logo {
+  font-size: 2rem;
+}
+.nav__logo-monika {
+  font-family: var(--secondary-font);
+}
+.nav__logo-studycorner {
+  font-family: var(--tertiary-font);
+}
+
+.nav__menu {
+  display: flex;
+  align-items: center;
+}
+.nav__menu-links {
+  display: flex;
+  padding-right: 20px;
+}
+.nav__menu-links a {
+  margin-right: 20px;
+  margin-right: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-family: var(--secondary-font);
+  font-size: 1.5rem;
+}
+
+.home {
+  border-bottom: 4px solid var(--secondary-color) ;
+}
+
+.nav__menu-links li:hover a {
+  border-bottom: 4px solid var(--secondary-color);
+}
+
+
+.switch {
+  display: flex;
+  position: relative;
+  border: 2px solid var(--tertiary-color);
+  width: 72px;
+  height: 38px;
+  border-radius: 45px;
+  background-color: var(--tertiary-color);
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 6px;
+  padding-right: 6px;
+  box-shadow: var(--tertiary-color) 1px 3px 10px;
+  cursor: pointer;
+}
+
+.switch__onoff {
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: 4px;
+  width: 30px;
+  height: 30px;
+  background-color: var(--secondary-color);
+  border-radius: 50%;
+}
+
+.moon {
+  padding: 5px;
+  fill: var(--secondary-color);
+  stroke: var(--secondary-color);
+  z-index: 2;
+}
+
+.sun {
+  fill: var(--tertiary-color);
+  stroke: var(--tertiary-color);
+  z-index: 2;
+}
+
+
+.nav__mobile {
+  display: none;
+}
+
+
+.hero {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 100px;
+}
+.hero img {
+  margin-top: 70px;
+  width: 900px;
+  height: auto;
+  -webkit-user-drag: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+
+footer {
+  display: flex;
+  width: 100%;
+  justify-content: end;
+  padding-right: 3rem;
+  font-family: var(--secondary-font);
+  font-size: 6rem;
+  color: var(--tertiary-color);
+}
